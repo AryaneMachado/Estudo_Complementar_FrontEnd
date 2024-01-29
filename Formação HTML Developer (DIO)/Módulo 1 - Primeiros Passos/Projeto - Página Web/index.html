@@ -15,26 +15,25 @@
         <li><a href="#internet">O que é a Internet e como ela funciona?</a></li>
         <li><a href="#client_server">O que são Clients e Servers?</a></li>
         <li><a href="#aplicacao_web">O que são as Aplicações Web?</a></li>
-        <li><a href="#html">O que são as Aplicações Web?</a></li>
-        <li><a href="#estrutura">Qual a estrutura básica de uma página HTML?</a></li>
+        <li><a href="#html">Afinal, o que é o HTML?</a></li>
         <li><a href="#tags">O que são as Tags?</a></li>
-        <li><a href="#atributos">O que são os Atributos?</a></li>
+        <li><a href="#estrutura">Qual a estrutura básica de uma página HTML?</a></li>
     </ul>
     <hr>
 
     <h3 id="internet">1. O que é a Internet e como ela funciona?</h3>
-    <p>De maneira simples, podemos definir a internet como uma <strong><mark>rede global de computadores que permite a troca de 
-    informações entre usuários em todo o mundo</mark></strong>. Ela utiliza protocolos padronizados e diversos meios de transmissão, 
+    <p>De maneira simples, podemos definir a internet como uma rede global de computadores que permite a troca de 
+    informações entre usuários em todo o mundo. Ela utiliza protocolos padronizados e diversos meios de transmissão, 
     como cabos de fibra óptica e redes sem fio, para conectar dispositivos eletrônicos. A Internet oferece uma ampla 
     gama de serviços, como e-mail, navegação na web, redes sociais e streaming de mídia, desempenhando um papel fundamental
      na comunicação, educação, entretenimento e negócios.</p>
 
     <h3 id="client_server">2. O que são Clients e Servers?</h3>
-    <p>Um <strong><mark>Cliente ou Client<mark></strong> é um dispositivo ou programa que solicita serviços ou recursos de outro dispositivo chamado servidor.
+    <p>Um Cliente ou Client é um dispositivo ou programa que solicita serviços ou recursos de outro dispositivo chamado servidor.
     Em um contexto de Internet, o cliente é geralmente o software em um computador, tablet, smartphone ou outro dispositivo
     que acessa serviços online, como navegadores da web, clientes de e-mail ou aplicativos de mensagens.</p>
     
-    <p>Já um <strong><mark>Server ou Servidor</mark></strong> é um dispositivo ou software que fornece serviços, recursos ou dados a outros dispositivos chamados clientes.
+    <p>Já um Server ou Servidor é um dispositivo ou software que fornece serviços, recursos ou dados a outros dispositivos chamados clientes.
     Servidores são projetados para atender a solicitações dos clientes, fornecendo informações, processamento de dados, armazenamento de arquivos ou execução de outras tarefas.
     Na Internet, servidores podem ser usados para hospedar sites, e-mails, jogos online, armazenar dados em nuvem e realizar diversas funções.</p>
 
@@ -46,13 +45,47 @@
     <blockquote><strong>Exemplo: </strong>LinkedIn, esta rede social focada em temática profissionais possui a sua versão Aplicação Web,
     bem como a sua versão Aplicativo.</blockquote>
 
-    <h3 id="html">4. O que é o HTML?</h3>
+    <h3 id="html">4. Afinal, o que é o HTML?</h3>
     <p>HTML, que significa HyperText Markup Language (Linguagem de Marcação de Hipertexto), é uma linguagem de marcação usada na construção e 
     estruturação de páginas web. Ele é fundamental para criar documentos web, permitindo a criação de páginas que podem ser visualizadas e integradas em 
-    navegadores da web.</p>
-    <blockquote><strong>Curiosidade:</strong> O HTML não é considerada uma linguagem de programação, apenas de marcação.</blockquote>
+    navegadores da web. Devemos salientar que o HTML não é uma <i><a href="https://rockcontent.com/br/blog/linguagem-de-programacao/" target="_blank">Linguagem de Programação</a></i>, 
+    já que o HTML não conta com um conjunto de instruções e regras usadas para resolver problemas por meio de algoritmos.</p>
     
+    <p><strong>4.1 Pensando na explicação da Arquitetura Client x Server, vista anteriormente, como podemos explicar o funcionamento do HTML?</strong></p>
+    <p>O HTML (Hypertext Markup Language) é uma linguagem de marcação fundamental na arquitetura Client x Server da web. Atuando no lado do Client, o 
+    HTML estrutura e organiza o conteúdo das páginas web por meio de tags, conceito que será explicado posteriormente. Quando um usuário acessa uma página, o 
+    navegador envia uma solicitação ao Server,que responde enviando o código HTML. O navegador interpreta esse HTML para renderizar a página. Essa linguagem de
+    marcação fornece a estrutura básica, enquanto outros recursos como <i><a href="https://www.hostinger.com.br/tutoriais/o-que-e-css-guia-basico-de-css" target="_blank">CSS</a></i>
+    e <i><a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank">JavaScript</a></i> são frequentemente utilizados para estilização e interatividade.
+    Essa interação é essencial para a experiência do usuário na web.
+    
+    <h3 id="tags">5. O que são as Tags?</h3>
+    <p>As tags HTML (Hypertext Markup Language) são elementos fundamentais para estruturar o conteúdo de uma página web. Elas são representadas entre colchetes
+    angulares e são usadas em pares, com uma tag de abertura e uma tag de fechamento. As tags podem conter atributos, conceito a ser explicado posteriormente, que fornecem informações adicionais sobre 
+    os elementos.
+    <p>Existem elementos de bloco, que ocupam uma linha inteira, e elementos inline, que ficam dentro do fluxo de texto. Exemplos comuns incluem &lt;html&gt;, &lt;head&gt;, 
+    &lt;body&gt;, &lt;p&gt;, &lt;a&gt; e &lt;img&gt;. As tags HTML são essenciais para criar a estrutura e o layout de uma página web, permitindo que os navegadores interpretem e exibam 
+    o conteúdo de maneira adequada.</p>
+    
+    <p><strong>5.1 O que são os Atributos de Tags?</strong></p>
+    <p>Atributos em HTML são informações adicionais inseridas nas tags para personalizar elementos. Eles consistem em um nome e um valor, adicionados à tag de abertura. Atributos podem conter valores
+    como URLs, IDs, classes, etc. Alguns são globais e podem ser usados em qualquer elemento, enquanto outros são específicos de certas tags. Alguns atributos são booleanos, indicando verdadeiro pela 
+    sua presença e falso pela ausência. A utilização de atributos é essencial para personalizar comportamentos e apresentação de elementos em uma página web.</p>
 
+    <blockquote><strong>Dica:</strong> Para saber sobre todas as aplicações das mais diversas tags HTML e Atributos de Tags, o portal <i><a href="https://www.w3schools.com" target="_blank">W3Schools</a></i>
+    é o mais recomendado, pois é voltado ao aprendizado de tecnologias web.</blockquote>
+
+    <h3 id="estrutura">6. Qual a estrutura básica de uma página HTML?</h3>
+    <p>Resumidamente, podemos definir a estrutura básica de um documento HTML em três partes principais, representadas por Tags, sendo elas:</p>
+    <ul>
+        <li><strong>&lt;html&gt;:</strong> Esta Tag incializa e finaliza um documento HTML.</li>
+        <li><strong>&lt;head&gt;:</strong> Já esta Tag, define o Cabeçalho de um documento HTML, onde as especificações não visíveis ao usuário são inseridas
+        como idioma, meta tags, folhas de estilo, scripts, dentre outras definições.</li>
+        <li><strong>&lt;body&gt;:</strong> Esta Tag, define o "corpo" do documento HTML, abrigando todo o conteúdo visível ao usuário como os textos,
+        imagens, tabelas, etc.</li>
+    </ul>
+    <p>Mas, devemos salientar, que um documento HTML, não se restringe somente as Tags citadas, podendo ser estruturado com vários outros elementos, 
+    que juntos, promovem uma boa navegabilidade, contribuindo com a experiência do usuário.</p>
     
 
 </body>
