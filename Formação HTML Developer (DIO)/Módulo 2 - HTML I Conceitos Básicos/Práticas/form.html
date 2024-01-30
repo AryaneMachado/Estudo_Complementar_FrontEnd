@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Cadastro</title>
+    <title>Formulário</title>
 </head>
 <body>
 
-    <form name="contact" method="GET" action="#">
+    <form name="contact" onsubmit="alert('Dados enviados!');" autocomplete="on" target="_blank" method="GET" action="https://web.dio.me">
         Nome: <input type="text" name="name"/><br>
         Idade: <input type="number" name="age"/><br>
-        Senha: <input type="password" name="password">/<br> <!--Senha em caracteres-->
+        Senha: <input type="password" name="password"><br> <!--Senha em caracteres-->
         <button type="submit">Enviar</button>
     </form>
     
