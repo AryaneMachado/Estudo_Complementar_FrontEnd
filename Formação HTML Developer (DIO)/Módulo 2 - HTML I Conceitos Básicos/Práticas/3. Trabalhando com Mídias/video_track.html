@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Vídeos e Tracks</title>
+</head>
+
+<style>
+    video {
+        width: 500px;
+        height: 300px;
+    }    
+</style>
+
+<body>
+    
+    <video controls>
+         <source src="/images/video_01.mp4"/>
+         Seu navegador não suporta vídeo!
+    </video><br>
+
+    <video controls>
+        <source src="/images/video_02.mp4">
+        Seu navegador não suporta vídeo!
+        <track src="legenda_en.vtt" kind="captions" srclang="en"> <!--Legenda 1-->
+        <track default src="/images/legenda_pt.vtt" kind="captions" srclang="pt-br"><!--Legenda 2 (principal)-->
+    </video>
+</body>
+</html>
