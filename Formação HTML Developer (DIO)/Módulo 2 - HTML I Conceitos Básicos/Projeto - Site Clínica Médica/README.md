@@ -1,6 +1,6 @@
 # Módulo 2: Criando meu primeiro Site com HTML 
 
-Bem-vindo (a) a este repositório! Este projeto foi desenvolvido como um Desafio de Projeto durante a Formação HTML Developer, oferecida pela Digital Innovation One (DIO).
+Bem-vindo (a) a este repositório! Aqui está o segundo projeto desenvolvido como um Desafio de Projeto durante a Formação HTML Developer, oferecida pela Digital Innovation One (DIO).
 
 O desafio teve como objetivo criar um site "quase" completo, abordando tudo o que foi visto no módulo. Os temas abordados foram: Formulários, Estruturação e formatação de texto, Mídias, Tabelas.
 
