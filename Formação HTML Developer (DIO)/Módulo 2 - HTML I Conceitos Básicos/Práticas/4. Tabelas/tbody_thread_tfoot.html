@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tbody, thread e tfoot</title>
+    <style>
+
+        table tr:nth-child(even) { 
+            background-color: aqua;
+
+        }
+
+        table tr:hover td {
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <table summary="Tabela de Nomes" border="1" width="500" align="center"> <!--Inicia tabela-->
+        <caption>Tabela de nomes</caption>
+        <thread> <!--Cabeçalho-->
+            <tr id="1"> <!--Linha-->
+            <th title="Nome completo 1">Nome 1</th> <!--Coluna, definição do cabeçalho-->
+            <th title="Nome completo 2">Nome 2</th>
+            </tr>
+        </thread>
+
+        <tbody> <!--Corpo-->
+            <tr id="2">
+                <td>Mariana</td>
+                <td>Marcela</td>
+            </tr>
+    
+            <tr id="3">
+                <td>Mariana</td>
+                <td>Marcela</td>
+            </tr>
+    
+            <tr id="4">
+                <td>Maristela</td>
+                <td>Larissa</td>
+            </tr>
+    
+            <tr id="5">
+                <td>Brenda</td>
+                <td>Rosely</td>
+            </tr>
+    
+            <tr id="6">
+                <td>Bárbara</td>
+                <td>Karina</td>
+            </tr>
+            <tr id="2">
+                <td>Mariana</td>
+                <td>Marcela</td>
+            </tr>
+    
+            <tr id="3">
+                <td>Mariana</td>
+                <td>Marcela</td>
+            </tr>
+    
+            <tr id="4">
+                <td>Maristela</td>
+                <td>Larissa</td>
+            </tr>
+    
+            <tr id="5">
+                <td>Brenda</td>
+                <td>Rosely</td>
+            </tr>
+    
+            <tr id="6">
+                <td>Bárbara</td>
+                <td>Karina</td>
+            </tr>
+        
+            <tfoot> <!--Rodapé-->
+            <tr id="7">
+                <td>Bianca</td>
+                <td>Beatriz</td>
+            </tr>
+            </tfoot>
+    
+        </tbody>
+       
+    </table>
+
+</body>
+</html>
