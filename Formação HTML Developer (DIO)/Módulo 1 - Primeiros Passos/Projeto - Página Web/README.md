@@ -1,4 +1,4 @@
-# Módulo 1: Entendendo o Desafio de Projeto
+# Módulo 1: Criando uma Página Web com as tags aprendidas
 
 Bem-vindo (a) a este repositório! Este projeto foi desenvolvido como um Desafio de Projeto durante a Formação HTML Developer, oferecida pela Digital Innovation One (DIO). O objetivo principal foi aplicar conhecimentos adquiridos nas aulas teóricas e práticas do Módulo 1, sobre a estrutura básica do HTML e a utilização de diversas tags e alguns atributos.
 
