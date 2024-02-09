@@ -1,0 +1,55 @@
+h1 {
+    color:red;
+}
+
+/*Iniciando bloco media querie*/
+
+/*Para o modo screen (tela): */
+@media screen and (max-width: 500px) { /*para telas inferiores a 500px*/
+
+    h1 {
+        color:blue;
+    }
+
+}
+
+/*Para todos os modos*/
+@media (max-width: 700px) {
+    h1 {
+        color:purple;
+    }
+}
+
+/*Mobile first*/
+/*min-width -> max-width*/
+
+/*para telas cujo tamanho mínimo é 200px: */
+@media (min-width: 200px) { 
+ 
+    h2 {
+        color:green;
+    }
+}
+
+/*Intervalos de tamanho: */
+@media (min-width: 300px) and (max-width: 700px) {
+    h3 {
+        font-size: 3em;
+    }
+}
+
+/*Orientação: */
+@media (orientation: landscape) { /*Quando na horizontal*/
+    h3 {
+        color: brown;
+    }
+}
+
+/*OR na Media Querie*/
+@media (max-width: 200px), (orientation: landscape) { /*Para as duas situações*/
+
+    h3 {
+        font-size: 4em;
+    }
+
+}

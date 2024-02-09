@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select e Tipos</title>
+</head>
+<body>
+
+    <form>
+        <label>Nome do Funcionário: </label><input type="name" name="name"><br>
+        <label>Cargo: </label>
+            <select name="office"> <!--Abre menu de opções-->
+                <option value="opções">Selecione o cargo</option>
+                <option value="administrador">Administrador</option>
+                <option selected value="gerente">Gerente</option> <!--Opção pré-selecionada-->
+                <option value="coordenador">Coordenador</option>
+                <option value="vendedor">Vendedor</option>
+                <option value="motorista">Motorista</option>
+            </select><br>
+
+        <label>Salário: </label><input type="number" name="salary"><br>
+        <label>Assunto: </label>
+            <select name="subject" multiple> <!--podendo marcar várias opções-->
+                <option value="opções">Selecione o assunto</option>
+                <option selected value="dúvida">Dúvida</option> <!--Opção pré-selecionada-->
+                <option value="sugestão">Sugestão</option>
+                <option value="reclamação">Reclamação</option>
+                <option value="envio">Envio</option>
+            </select><br>
+
+        <label>Deixe sua mensagem: </label>
+        <textarea name="mensagem" rows="10" cols="20"></textarea><br> <!--Criando caixa de texto para o usuário-->
+        <button >Enviar</button>
+    </form>
+    
+</body>
+</html>

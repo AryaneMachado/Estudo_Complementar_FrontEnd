@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando uma Tabela</title>
+    <style>
+
+        table {
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(189,189,189,0.9);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(189,189,189,0.9);
+        box-shadow: 10px 10px 5px 0px rgba(189,189,189,0.9);
+        border: solid 1px;
+        }
+
+        table {
+            border:solid 1px black;
+
+        }
+
+        table thead th {
+            background-color: black;
+            color:azure;
+        }
+
+        table tfoot td {
+            background-color: rgb(213, 233, 236);
+        }
+
+        table tbody tr:nth-child(even) td{
+
+            background-color:rgb(180, 243, 243);
+
+        }
+
+        table tbody tr:hover td{
+            background-color: aqua;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <table summary="Tabela de Nomes e Idades" width="250" align="center" cellspacing="0"> <!--Inicia tabela-->
+        <caption>Tabela de Nomes e Idades</caption>
+        
+        <thead id="1"> <!--Cabeçalho-->
+            <th title="Nome">Nome</th> <!--Coluna, definição do cabeçalho-->
+            <th title="Idade">Idade</th>
+        </thead>
+
+        <tbody> <!--Corpo-->
+            <tr id="2">
+                <td>Mariana</td>
+                <td>35</td>
+            </tr>
+    
+            <tr id="3">
+                <td>Mariana</td>
+                <td>21</td>
+            </tr>
+    
+            <tr id="4">
+                <td>Maristela</td>
+                <td>25</td>
+            </tr>
+    
+            <tr id="5">
+                <td>Brenda</td>
+                <td>29</td>
+            </tr>
+    
+            <tr id="6">
+                <td>Bárbara</td>
+                <td>26</td>
+            </tr>
+        
+        </tbody>
+
+            <tfoot>
+            <tr>
+                <td>Fim nome</td>
+                <td>Fim idade</td>  
+            </tr>
+        </tfoot>
+       
+    </table>
+
+</body>
+</html>
