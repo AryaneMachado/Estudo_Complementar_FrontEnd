@@ -9,18 +9,24 @@
 <style>
 
     .container {
-
-        /* display: block; Vertical -> lado a lado */
+        background-color: burlywood; /*todo o container colorido*/
+        height: 300px;
         display: flex; /*Horizontal -> lado a lado*/
-        flex-direction: row; /* Na orientação coluna*/
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    
+        /*display: block; Vertical -> lado a lado */
+        /*flex-direction: row; Na orientação coluna*/
         /* flex-wrap: nowrap; linha de componentes não quebra */
-        flex-wrap: wrap; /*linha de componentes é quebrável quando necessário */
-        justify-content: space-between; /*espaço iguais entre eles*/
-        justify-content: space-around; /*com espaço externo menor*/
-        justify-content: flex-start; /*elementos organizados no canto superior esquerdo (início)*/
+         /*flex-wrap: wrap; linha de componentes é quebrável quando necessário */
+        /*justify-content: space-between; maior espaço possível entre eles*/
+        /*justify-content: space-evenly; espaços iguais entre elees*/
+        /*justify-content: space-around; com espaço externo menor*/
+        /*justify-content: flex-start; elementos organizados no canto superior esquerdo (início)*/
         /*justify-content: flex-end; elementos organizados no canto superior direito (final)*/
-
     }
+
     .elemento {
         width: 100px;
         height: 100px;
@@ -34,8 +40,6 @@
 
 <div class="container"> <!--Div que abraça demais conteúdos-->
 
-    <div class="elemento"></div>
-    <div class="elemento"></div>
     <div class="elemento"></div>
     <div class="elemento"></div>
 </div>
