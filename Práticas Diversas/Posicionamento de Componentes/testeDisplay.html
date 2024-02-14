@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com Display</title>
+
+    <style>
+        .div-header {
+            background-color: aqua;
+            display: inline-block;
+            width: 100%;
+            height: 100px;
+        }
+
+        .div-header ul li {
+            display: inline-block;
+            padding-right: 100px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .ul-links {
+            text-align: center;
+        }
+
+       .div-main ul li {
+        display: inline-block;
+        /* padding-right: 40px; */
+        margin: 0px;
+       }
+
+       #li-01 {
+        background-color: burlywood;
+        width: 15%;
+        height: 400px;
+       }
+
+       #li-02 {
+        background-color: rgb(205, 245, 146);
+        width: 80%;
+        height: 400px;
+       }
+
+       .div-footer {
+        width: 100%;
+        height: 100px;
+        background-color: aquamarine;
+        display: inline-block;
+       }
+
+        .div-footer p {
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+
+        }
+
+    </style>
+
+    </head>
+    <body>
+
+        <header>
+            <nav class="div-header">
+                <ul class="ul-links">
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="div-main">
+                <ul>
+                    <li id="li-01">Conteúdo 1</li>
+                    <li id="li-02">Conteúdo 2</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <div class="div-footer">
+                <p>Todos os direitos reservados</p>
+            </div>
+        </footer>
+        
+    
+</body>
+</html>

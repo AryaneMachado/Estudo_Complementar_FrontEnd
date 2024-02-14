@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Display Inline</title>
+</head>
+
+<style>
+
+    
+#span-inline-block { /* Em blocos em uma mesma linha, sem aceitar epaçamentos*/
+        background-color: aqua;
+        height: 400px;
+        width: 400px;
+
+}
+
+#span-inline { /* Em linha, com tamanhos e espaçamentos*/
+        display:inline-block;
+        background-color: yellow;
+        width: 60px;
+        height: 300px;
+        margin: 10px;
+        padding: 5px;
+}
+
+.nav-menu {
+    background-color: pink;
+}
+
+.nav-menu ul li {
+    display:inline-block; /*Redefinindo display*/
+    padding: 20px 40px;
+    margin: 100px 200px;
+    text-decoration: none; /*Removendo sublinhado de link*/
+}
+</style>
+
+<body>
+
+    <div class="div-display-inline-block">
+        <span id="span-inline-block">Exemplo 01</span>
+        <span id="span-inline-block">Exemplo 02</span>
+        <span id="span-inline-block">Exemplo 03</span>
+    </div><br>
+
+    <div class="div-display-inline">
+        <span id="span-inline">Exemplo 01</span>
+        <span id="span-inline">Exemplo 02</span>
+        <span id="span-inline">Exemplo 03</span>
+    </div> 
+
+    <div id="div-menu">
+        <nav class="nav-menu">
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </nav>
+    </div>
+    
+
+</body>
+</html>
