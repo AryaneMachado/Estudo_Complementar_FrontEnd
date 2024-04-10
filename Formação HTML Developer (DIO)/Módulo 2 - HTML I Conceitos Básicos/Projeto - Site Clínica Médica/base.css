@@ -8,7 +8,7 @@ body {
 }
 
 .wrapper {
-    width: 1200px;
+    width: 1300px;
     display: flex;
     margin: 0 auto;
     background-color: aquamarine;
@@ -16,18 +16,51 @@ body {
 .main {
     display: flex;
     flex-flow: column;
-    width: 85%;
+    width: 100%;
 }
 .menu {
-    width: 12%;
-    background-color: aqua;
+    width: 15%;
+    background-color: #BEF0EB;
     padding: 10px 20px 0px;
+    padding-left: 10px;
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+
+#link_paginas {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 0px;
+    padding-left: 15px;
+ 
+}
+
+#logo_principal, #img_slogan {
+    padding-right: 3px;
+    padding-left: 4px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+#img_home, #img_sobre, #img_funcionamento, #img_contato {
+    padding-bottom: 0px;
+    width: 100%;
+    margin-top: 0px;
+   
+}
+
+#img_slogan {
+    max-width: 150px;
+    padding-top: 25px;
 }
 
 ul {
     list-style-type: none; /*Remove icone dos itens */
     padding: 0; /*Remove espaço padrão*/
-    margin-top: 200px;
+    margin-top: 40px;
+    width: 90%;
 }
 
 li {
@@ -36,7 +69,8 @@ li {
 
 .header {
     background-color: rgb(5, 108, 108);
-    min-height: 150px;
+    height: 200px;
+    min-height: 180px;
 }
 .content {
     background-color: white;
@@ -45,5 +79,5 @@ li {
 }
 .footer {
     background-color: rgb(99, 56, 240);
-    min-height: 150px;
+    min-height: 163px;
 }
