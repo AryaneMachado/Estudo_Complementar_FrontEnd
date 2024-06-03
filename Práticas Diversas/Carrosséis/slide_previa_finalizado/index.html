@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Slider Prévia</title>
+</head>
+
+<body>
+
+    <section>
+
+        <div class="swiper-btns">
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider-video">
+                        <video src="images/AGO/video01.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-video">
+                        <video src="images/AGO/video02.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-video">
+                        <video src="images/AGO/video03.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-video">
+                        <video src="images/AGO/video04.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-video">
+                        <video src="images/AGO/video05.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-video">
+                        <video src="images/AGO/video06.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+
+</html>
+
+<!--Começa bloco script-->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper('.swiper', {
+    loop: true, // torna o carrossel infinito
+    slidesPerView: 'auto',
+    spaceBetween: 33,
+    centeredSlides: true, 
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    on: {
+        init: function () {
+            playVideo(this.realIndex);
+        },
+        slideChange: function () {
+            playVideo(this.realIndex);
+        },
+    },
+});
+
+function playVideo(index) {
+    const videos = document.querySelectorAll('video');
+    Array.prototype.forEach.call(videos, function(video){
+        video.pause();
+        video.currentTime = 0;
+    });
+    const activeSlideIndex = index % videos.length;
+    const activeVideo = videos[activeSlideIndex];
+    activeVideo.muted = true;
+    activeVideo.play();
+}
+</script>
