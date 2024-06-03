@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Slider Prévia</title>
+</head>
+
+<body>
+
+    <section>
+
+        <div class="swiper-btns">
+            <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        
+        <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <h3><span></span>Paris <small>France</small></h3>
+                <div class="slider-video">
+                <video src="images/video_01.mp4" type="video/mp4"></video>
+                </div>
+        </div>
+
+        <div class="swiper-slide">
+            <h3><span></span>Bangkok <small>Thailand</small></h3>
+                <div class="slider-video">
+                <video src="images/video_02.mp4" type="video/mp4"></video>
+                </div>
+        </div>
+
+        <div class="swiper-slide">
+            <h3><span></span>Berlin <small>Germany</small></h3>
+                <div class="slider-video">
+                <video src="images/video_03.mp4" type="video/mp4"></video>
+                </div>
+        </div>
+
+        <div class="swiper-slide">
+            <h3><span></span>Dubai <small>UAE</small></h3>
+                <div class="slider-video">
+                <video src="images/video_04.mp4" type="video/mp4"></video>
+                </div>
+        </div>
+
+        <div class="swiper-slide">
+            <h3><span></span>Kyoto <small>Japan</small></h3>
+                <div class="slider-video">
+                <video src="images/video_05.mp4" type="video/mp4"></video>
+                </div>
+        </div>
+
+        </div>
+
+        </div>
+
+    </section>
+    
+</body>
+
+
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+const swiper = new Swiper('.swiper', {
+    loop: false,
+    slidesPerView: 'auto',
+    spaceBetween: 33,
+    centeredSlides: true, 
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    on: {
+        init: function () {
+            const videos = document.querySelectorAll('video');
+            const activeIndex = this.realIndex;
+            const activeSlide = document.getElementByClassName('swiper-slide')[activeIndex];
+            const activeVideo = activeSlide.getElementsByTagName('video')[0];
+            activeVideo.muted = true;
+            Array.prototype.forEach.call(videos, function(video){
+                video.pause();
+                video.currentTime = 0
+            })
+            activeVideo.play();
+            },
+
+            slideChange: function () {
+            const videos = document.querySelectorAll('video');
+            const activeIndex = this.realIndex;
+            const activeSlide = document.getElementByClassName('swiper-slide')[activeIndex];
+            const activeVideo = activeSlide.getElementsByTagName('video')[0];
+            activeVideo.muted = true;
+            Array.prototype.forEach.call(videos, function(video){
+                video.pause();
+                video.currentTime = 0
+            })
+            activeVideo.play();
+            },
+
+        },
+});
+
+
+</script>
